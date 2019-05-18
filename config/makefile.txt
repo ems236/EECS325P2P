@@ -1,0 +1,69 @@
+all:
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-10.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-10.case.edu javac p2p/*.java
+
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-11.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-11.case.edu javac p2p/*.java
+
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-12.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-12.case.edu javac p2p/*.java
+
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-13.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-13.case.edu javac p2p/*.java
+
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-14.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-14.case.edu javac p2p/*.java
+
+	sshpass -p 'M1n1cl1p!' scp ~/eclipse-workspace/Networks1/src/*.java ems236@eecslab-15.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-15.case.edu javac p2p/*.java
+	
+reset:
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-10.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-10.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-10.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-10.case.edu mkdir p2p/obtained
+
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-11.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-11.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-11.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-11.case.edu mkdir p2p/obtained
+
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-12.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-12.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-12.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-12.case.edu mkdir p2p/obtained
+
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-13.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-13.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-13.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-13.case.edu mkdir p2p/obtained
+
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-14.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-14.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-14.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-14.case.edu mkdir p2p/obtained
+
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-15.case.edu rm -r p2p
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-15.case.edu mkdir p2p 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-15.case.edu mkdir p2p/shared 
+	sshpass -p 'M1n1cl1p!' ssh ems236@eecslab-15.case.edu mkdir p2p/obtained
+
+config:
+	
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/10/* ems236@eecslab-10.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/10/* ems236@eecslab-10.case.edu:~/p2p/shared
+
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/11/* ems236@eecslab-11.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/11/* ems236@eecslab-11.case.edu:~/p2p/shared
+
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/12/* ems236@eecslab-12.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/12/* ems236@eecslab-12.case.edu:~/p2p/shared
+
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/13/* ems236@eecslab-13.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/13/* ems236@eecslab-13.case.edu:~/p2p/shared
+
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/14/* ems236@eecslab-14.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/14/* ems236@eecslab-14.case.edu:~/p2p/shared
+
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/15/* ems236@eecslab-15.case.edu:~/p2p
+	sshpass -p 'M1n1cl1p!' scp ~/Documents/School/networks/project/config/files/15/* ems236@eecslab-15.case.edu:~/p2p/shared
